@@ -67,7 +67,7 @@ a:link {
 }
 
 .details-card {
-  width: 1200px;
+  width: 1000px;
   margin-top: 50px;
   border: 1px solid black;
   display: flex;
@@ -79,17 +79,31 @@ a:link {
   margin: 20px;
   border: 1px solid black;
   display: flex;
-  width: 40%;
+  width: 45%;
   height: 400px;
   justify-content: center;
+  box-shadow: -20px -20px 20px 0px rgba(0, 0, 0, 0.48);
 }
 
 .details-info {
+  display: grid;
+  align-content: center;
   margin: 20px;
   border: 1px solid black;
-  width: 40%;
+  width: 45%;
   height: 400px;
-  justify-content: center;
+  text-align: center;
+}
+
+.event-description {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.event-description p {
+  margin-right: 50px;
 }
 
 .view {
@@ -105,7 +119,7 @@ a:link {
 }
 
 .details-container {
-  min-height: calc(100vh - 100px - 150px);
+  min-height: calc(100vh - 100px - 132px);
 }
 
 .form-container {
@@ -178,9 +192,8 @@ footer {
   margin: 25px;
 }
 
-footer > div > svg {
+footer > div > a > svg {
   padding: 6px;
-  margin-right: 50px;
   color: #f5f5f5;
   border-radius: 40%;
   background-color: black;
